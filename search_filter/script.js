@@ -1,6 +1,4 @@
 
-
-
 const container = document.getElementById('cardContainer');
 
 const users = [
@@ -12,8 +10,7 @@ const users = [
 ];
 
 function showUsers(arr) {
-  
-    container.innerHTML = '';
+  container.innerHTML = '';
 
   arr.forEach(user => {
     const card = document.createElement('div');
@@ -32,21 +29,15 @@ function showUsers(arr) {
     cardContent.appendChild(name);
     cardContent.appendChild(bio);
     card.appendChild(cardContent);
-
     container.appendChild(card);
   });
 }
 
 showUsers(users);
 
-
-let inp= document.querySelector("#searchInput");
-inp.addEventListener("input",function(){
-
-    let newusers= users.filter((user)=> {
-        // return user.name.startsWith(inp.value);
-        return user.name.toLowerCase().startsWith(inp.value.toLowerCase());
-    });
-    
-    showUsers(newusers);
-})
+const inp = document.querySelector("#searchInput");
+inp.addEventListener("input", function() {
+  const value = inp.value.trim().toLowerCase();
+  const filtered = users.filter(user => user.name.toLowerCase().includes(value));
+  showUsers(filtered);
+});

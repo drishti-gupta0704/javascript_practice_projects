@@ -10,6 +10,33 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  background: #f0f0f0;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.search-container {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+#searchInput:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0,123,255,0.5);
 }
 
 #cardContainer {
@@ -17,7 +44,6 @@ body {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  margin-top: 20px;
 }
 
 .card {
@@ -26,24 +52,31 @@ body {
   border-radius: 10px;
   overflow: hidden;
   position: relative;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   display: flex;
   align-items: flex-end;
   padding: 10px;
+  color: #fff;
   /* background-size: cover; */
   background-position: center;
-  color: #fff;
-   
-  background-size: contain; /* fits the whole image inside card */
-  background-repeat: no-repeat; /* prevents tiling */
-  
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+  background-size: contain; /* fits the whole image inside card */ background-repeat: no-repeat; /* prevents tiling */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
 .card-content {
   position: relative;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 5px 10px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 8px 12px;
   border-radius: 5px;
   width: 100%;
 }
@@ -57,3 +90,9 @@ body {
   font-size: 12px;
   margin-top: 3px;
 }
+
+/* Fade-in animation for cards */
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+

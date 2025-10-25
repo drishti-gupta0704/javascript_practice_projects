@@ -13,6 +13,7 @@ const users = [
 
 function showUsers(arr) {
   
+    container.innerHTML = '';
 
   arr.forEach(user => {
     const card = document.createElement('div');
@@ -37,3 +38,14 @@ function showUsers(arr) {
 }
 
 showUsers(users);
+
+
+let inp= document.querySelector("#searchInput");
+inp.addEventListener("input",function(){
+
+    let newusers= users.filter((user)=> {
+        return user.name.startsWith(inp.value);
+    });
+    
+    showUsers(newusers);
+})

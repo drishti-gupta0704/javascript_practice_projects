@@ -12,7 +12,7 @@ const users = [
    {name: "Tom and Jerry", pic:"https://i.pinimg.com/736x/54/28/55/5428558224979306b998bb01f8c05f78.jpg", bio:"Mischievous, clever, funny cat-mouse duo."},
    {name: "SpongeBob", 
  pic: "https://cloudfront-us-east-1.images.arcpublishing.com/opb/UODRDCE3KTLWUWUHHRETSAXL7U.jpg", 
- bio: "Cheerful, optimistic, funny underwater sponge. 🧽🍍"},
+ bio: "Cheerful, optimistic, funny underwater sponge. 🧽"},
 
  {name: "Minion", pic:"https://i.pinimg.com/736x/a4/8a/f4/a48af4aa0669625403b6ac1a4d83a05b.jpg", bio:"Funny, mischievous, yellow little helpers"},
 

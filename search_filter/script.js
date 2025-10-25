@@ -44,7 +44,8 @@ let inp= document.querySelector("#searchInput");
 inp.addEventListener("input",function(){
 
     let newusers= users.filter((user)=> {
-        return user.name.startsWith(inp.value);
+        // return user.name.startsWith(inp.value);
+        return user.name.toLowerCase().startsWith(inp.value.toLowerCase());
     });
     
     showUsers(newusers);

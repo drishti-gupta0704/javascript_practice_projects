@@ -15,7 +15,7 @@ html, body {
   border-radius: 10px;
   overflow: hidden;
   position: relative;
-  background-image: url('https://via.placeholder.com/250x150'); /* replace with your image */
+ 
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -37,7 +37,3 @@ html, body {
   font-size: 18px;
 }
 
-.card-content p {
-  margin: 2px 0 0;
-  font-size: 14px;
-}

@@ -25,4 +25,7 @@ JavaScript
 [View Project](https://vermillion-sunflower-21bf22.netlify.app/) 🚀 
 
 # 📸 Snapshot of the project
-Will be added after completion.
+<p align ="center">
+  <img src="img1.png" alt="this is snapshot of the project" width="600">
+  <img src="img2.png" alt="this is snapshot of the project" width="600">
+</p>

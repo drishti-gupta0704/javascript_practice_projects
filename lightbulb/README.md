@@ -22,7 +22,7 @@ CSS
 JavaScript
 
 # 🔗 Live Demo of Project
-[View Project]() 🚀 
+[View Project](https://vermillion-sunflower-21bf22.netlify.app/) 🚀 
 
 # 📸 Snapshot of the project
 Will be added after completion.

@@ -13,6 +13,6 @@
 - JavaScript  
 
 ## 🔗 Live Demo of Project
-[View Project]() 🚀  
+[View Project](https://toastermessage.netlify.app/) 🚀  
 
 

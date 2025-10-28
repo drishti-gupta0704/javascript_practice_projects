@@ -1,16 +1,34 @@
-let toastBtn = document.getElementById("toastBtn");
-let toast = document.getElementById("toast");
 
-toastBtn.addEventListener("click", function() {
-  showToast(" Notification is shown successfully");
+
+var darkBtn = document.getElementById("darkBtn");
+var lightBtn = document.getElementById("lightBtn");
+
+darkBtn.addEventListener("click", function() {
+  showToast("This is a dark toast!", "dark");
 });
 
-function showToast(msg) {
-  toast.textContent = msg; 
-  toast.classList.add("show"); 
+lightBtn.addEventListener("click", function() {
+  showToast(" This is a light toast!", "light");
+});
+
+function showToast(message, theme) {
+  var toast = document.createElement("div");
+  toast.classList.add("toast");
+  toast.classList.add(theme);
+  toast.textContent = message;
+
+  document.body.appendChild(toast);
+
+
+  setTimeout(function() {
+    toast.classList.add("show");
+  }, 100);
 
   
   setTimeout(function() {
     toast.classList.remove("show");
+    setTimeout(function() {
+      toast.remove();
+    }, 500);
   }, 3000);
 }

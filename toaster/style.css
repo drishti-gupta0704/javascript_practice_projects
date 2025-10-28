@@ -1,36 +1,31 @@
-
-* {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-}
-
-html, body {
-  height: 100%;
-  width: 100%;
-}
-
-#toast {
-  visibility: hidden;
-  min-width: 200px;
-  background-color: #321818;
-  color: white;
-  text-align: center;
-  border-radius: 5px;
-  padding: 10px;
+ .toast {
   position: fixed;
   bottom: 30px;
   right: 30px;
+  min-width: 220px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-align: center;
   font-size: 15px;
   opacity: 0;
   transition: opacity 0.5s, bottom 0.5s;
+  z-index: 9999;
 }
 
 
+.toast.dark {
+  background-color: #333;
+  color: white;
+}
 
-#toast.show {
-  visibility: visible;
+.toast.light {
+  background-color: #f1f1f1;
+  color: black;
+  border: 1px solid #ccc;
+}
+
+
+.toast.show {
   opacity: 1;
   bottom: 50px;
 }
-

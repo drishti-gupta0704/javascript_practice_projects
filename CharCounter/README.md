@@ -4,7 +4,7 @@
 A DOM-manipulation project that shows a **live character count** as the user types.  
 
 ## 💡 Demo
-[View Project]() 🚀  
+[View Project](https://charcounterliveproject.netlify.app/) 🚀  
 
 
 ##  Features

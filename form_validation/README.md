@@ -1,6 +1,6 @@
 
 ## 🧾 Form Validation  
-This project implements a  signup form validation system using HTML, CSS & JavaScript.
+This project implements a signup form validation system using HTML, CSS & JavaScript.
 
 ### 📌 Features
 
@@ -18,4 +18,4 @@ JavaScript
 
 ## 🔗 Live Demo of Project
 
-[View Project]() 🚀  
+[View Project](https://capable-torte-064a18.netlify.app/) 🚀  

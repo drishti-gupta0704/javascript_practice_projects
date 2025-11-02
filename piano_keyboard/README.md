@@ -16,5 +16,5 @@ This project implements a simple piano that plays musical notes when specific ke
 
 ## 🔗 Live Demo of Project
 
-[View Project]() 🚀
+[View Project](https://deluxe-cocada-32fbd0.netlify.app/) 🚀
  

@@ -9,7 +9,8 @@ This project helps users confirm if their passwords match before form submission
 - Alerts when fields are empty
 
 ### tech stack used
-html
-css
-javascript
+- html
+- css
+- javascript
 
+#  [click to view live link ](https://poetic-scone-10de32.netlify.app/)

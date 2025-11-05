@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Register with LocalStorage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>User Registration</h2>
+    <form id="registerForm">
+      <input type="text" id="regName" placeholder="Enter Name" required>
+      <input type="email" id="regEmail" placeholder="Enter Email" required>
+      <input type="password" id="regPassword" placeholder="Enter Password" required>
+      <button type="submit">Register</button>
+      <p id="regMsg"></p>
+    </form>
+
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="email" id="loginEmail" placeholder="Enter Email" required>
+      <input type="password" id="loginPassword" placeholder="Enter Password" required>
+      <button type="submit">Login</button>
+      <p id="loginMsg"></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

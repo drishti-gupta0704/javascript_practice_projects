@@ -21,4 +21,5 @@ It allows users to search for any GitHub username and view their public informat
 
 ---
 
-## [click to view live project](https://candid-nasturtium-975a71.netlify.app/);
+## [click to view live project](https://candid-nasturtium-975a71.netlify.app/)
+

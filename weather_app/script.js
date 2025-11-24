@@ -4,7 +4,7 @@ const result = document.querySelector("#result");
 searchbtn.addEventListener("click",async()=>{
 
 const city = document.querySelector("#city").value.trim();
-const apiKey = "853a9778e5f0af3750e174b17b89d5d4" ;
+// const apiKey = "853a9778e5f0af3750e174b17b89d5d4" ;
 if(!city){
     result.innerText = "please enter your city name";
     return;

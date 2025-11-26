@@ -1,12 +1,38 @@
 
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simple Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
-    
+
+    <h1>Simple Expense Tracker</h1>
+
+    <div class="box">
+        <input type="text" id="desc" placeholder="Description">
+        <input type="number" id="amount" placeholder="Amount">
+        <select id="type">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+        </select>
+        <button id="add">Add</button>
+    </div>
+
+    <h2>Transactions</h2>
+    <ul id="list"></ul>
+
+    <h2>Summary</h2>
+    <p>Income: ₹<span id="inc">0</span></p>
+    <p>Expense: ₹<span id="exp">0</span></p>
+    <p>Balance: ₹<span id="bal">0</span></p>
+
+    <h2>Expense Chart</h2>
+    <canvas id="chart"></canvas>
+
+    <script src="script.js"></script>
 </body>
 </html>

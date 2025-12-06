@@ -4,8 +4,37 @@
   padding: 0%;
   box-sizing: border-box;
 }
-
+/* 
 html, body {
   height: 100%;
   width: 100%;
+} */
+
+body {
+    font-family: Arial;
+    padding: 20px;
 }
+
+.box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    padding: 8px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #eee;
+    margin: 5px 0;
+    padding: 8px;
+}
+
+.income { border-left: 4px solid green; }
+.expense { border-left: 4px solid red; }
